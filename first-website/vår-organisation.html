@@ -4,14 +4,17 @@
    body {
       font-size: 1rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-bottom: 50px;
-      padding: 20px;
+      padding: 10px;
+      background-color:#cca701;
     }
 
-    /** HEAD **/
+    /** HEADER **/
     header {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     background-image:url(https://www.treeplantation.com/images/banana-tree.png);
+     background-image:url(https://img.freepik.com/free-photo/assortment-sweet-juicy-fruits_23-2148144275.jpg);
+     background-size: cover;
+     box-shadow: 3px 3px #70601957;
+     border-radius: 20px;
      height: 250px;
      outline: 2px 2px white;
      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
@@ -48,7 +51,7 @@
 
     #slogan {
       text-align: right;
-      padding: 12px;
+      padding: 22px;
       font-style: italic;
       font-size: 18px;
     }
@@ -59,6 +62,8 @@
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
     nav a {
@@ -67,9 +72,10 @@
 
     /* MAIN */
     ul {
-      padding: 45px;
+      padding: 30px;
       background-color: #ffda39;
       list-style-type: "➽";
+      border-radius: 5px;
     }
 
     li {
@@ -88,7 +94,7 @@
       text-align: center;
       background-color: #ffda39;
       margin: 10px;
-      border-radius: 8px;
+      border-radius: 5px;
       width: 220px;
       height: 360px;
     }
@@ -98,12 +104,20 @@
       object-fit: cover;
     }
 
+    #mainDiv {
+      padding: 20px;
+      background-color: #FFFFFF;
+    }
+
     /** FOOTER **/
     footer {
       text-align: center;
       font-style: italic;
       font-size: 12px;
       padding: 20px;
+      background-color: #ffda39;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
     </style>
     
@@ -114,40 +128,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Svenska Fruktförbundet</title>
+  </head>
+
+  <body>
     <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
       <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
-    </header>
+    </header><br>
     <nav>
         <a href="vår-organisation.html">Vår organisation</a>
         <a href="medlemskap.html">Medlemskap</a>
         <a href="logga-in.html">Logga in</a>
         <a href="kontakt.html">Kontakta oss</a>
         <a href="/index.html">Hem ⮌</a>
-      </nav>
-  </head>
-
-  <body>
-    <h2>Vår organisation</h2>
-    <p>Svenska Fruktförbundet är mer än bara en förening - vi är ett helt nätverk av människor som älskar frukt i alla former. Hos oss möts odlare, forskare, företag och passionerade fruktälskare från hela landet. Tilsammans driver vi frågor som får både äpplen, päron och bananer att blomstra i Sverige.</p>
-    <p>Vi gillar att se oss själva som en fruktkorg full av idéer:</p>
-    <ul>
-     <li>🍎<b> Nätverkande </b>- vi samlar människor som vill dela kunskap och inspiration.</li>
-     <li>🍐<b> Evenemang </b>- från konferenser till smakprovningar, vi skapar möten där nya tankar växer fram.</li>
-     <li>🍊<b> Kunskapsspridning </b>- vi förädlar fakta om odling, hälsa och forskning och gör den tillgänglig för alla.</li>
-     <li>🍌<b> Påverkan </b>- vi vill att frukt ska ha en självklar plats i vardagen, i samhället och på tallriken.</li>
-    </ul>
-    <p>Vår styrelse består av en brokig blandning av fruktexperter, odlare och entusaster - alla med samma mål: att få Sverige att smaka lite mer som en fruktbuffé.</p>
-  <h2>Styrelsen</h2>
-  <div class="board">
-    <div><h3><a href="">Sean Banan</a></h3>
-      <img src="https://i.scdn.co/image/ab6761610000e5eba7874efb5aa08fc40af59c10" style="height: 250px;" id="seanBanan">
-    <b>Ordförande</b></div>
-    <div><h3><a href="">Anna Book</a></h3>
-      <img src="https://www.annabenson.se/wp-content/uploads/2014/09/AnnaBook.jpg" style="height: 250px;">
-    <b>Ledarmot</b></div>
-    <div><h3><a href="">Peter Jöback</a></h3>
-      <img src="https://i.discogs.com/YSw38wiQrdjAdTDNL2CSdV6GIoMdTbMZAFKl4Qw6-cI/rs:fit/g:sm/q:90/h:400/w:313/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM0MzM2/Mi0xNDI5ODY1MzAx/LTYzNjUuanBlZw.jpeg" style="height: 250px;">
-    <b>Ledarmot</b></div>
+    </nav>
+    <div id="mainDiv">
+      <h2>Vår organisation</h2>
+      <p>Svenska Fruktförbundet är mer än bara en förening - vi är ett helt nätverk av människor som älskar frukt i alla former. Hos oss möts odlare, forskare, företag och passionerade fruktälskare från hela landet. Tilsammans driver vi frågor som får både äpplen, päron och bananer att blomstra i Sverige.</p>
+      <p>Vi gillar att se oss själva som en fruktkorg full av idéer:</p>
+      <ul>
+      <li>🍎<b> Nätverkande </b>- vi samlar människor som vill dela kunskap och inspiration.</li>
+      <li>🍐<b> Evenemang </b>- från konferenser till smakprovningar, vi skapar möten där nya tankar växer fram.</li>
+      <li>🍊<b> Kunskapsspridning </b>- vi förädlar fakta om odling, hälsa och forskning och gör den tillgänglig för alla.</li>
+      <li>🍌<b> Påverkan </b>- vi vill att frukt ska ha en självklar plats i vardagen, i samhället och på tallriken.</li>
+      </ul>
+      <p>Vår styrelse består av en brokig blandning av fruktexperter, odlare och entusaster - alla med samma mål: att få Sverige att smaka lite mer som en fruktbuffé.</p>
+    <h2>Styrelsen</h2>
+    <div class="board">
+      <div><h3><a href="">Sean Banan</a></h3>
+        <img src="https://i.scdn.co/image/ab6761610000e5eba7874efb5aa08fc40af59c10" style="height: 250px;" id="seanBanan">
+      <b>Ordförande</b></div>
+      <div><h3><a href="">Anna Book</a></h3>
+        <img src="https://www.annabenson.se/wp-content/uploads/2014/09/AnnaBook.jpg" style="height: 250px;">
+      <b>Ledarmot</b></div>
+      <div><h3><a href="">Peter Jöback</a></h3>
+        <img src="https://i.discogs.com/YSw38wiQrdjAdTDNL2CSdV6GIoMdTbMZAFKl4Qw6-cI/rs:fit/g:sm/q:90/h:400/w:313/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM0MzM2/Mi0xNDI5ODY1MzAx/LTYzNjUuanBlZw.jpeg" style="height: 250px;">
+      <b>Ledarmot</b></div>
+      </div>
     </div>
   </body>
 

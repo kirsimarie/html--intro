@@ -11,7 +11,10 @@
     /** HEADER **/
     header {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     background-image:url(https://www.treeplantation.com/images/banana-tree.png);
+     background-image:url(https://img.freepik.com/free-photo/assortment-sweet-juicy-fruits_23-2148144275.jpg);
+     background-size: cover;
+     box-shadow: 3px 3px #70601957;
+     border-radius: 20px;
      height: 250px;
      outline: 2px 2px white;
      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
@@ -37,7 +40,7 @@
 
     #slogan {
       text-align: right;
-      padding: 12px;
+      padding: 22px;
       font-style: italic;
       font-size: 18px;
     }
@@ -60,8 +63,8 @@
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
-      text-align: center;
-      padding: 5px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
     nav a {
@@ -95,7 +98,6 @@
     }
 
     details[open] summary {
-      border-bottom: 1px solid #aaaaaa;
       margin-bottom: 0.5em;
     }
 
@@ -108,6 +110,12 @@
     summary:hover {
       cursor: pointer;
       text-decoration: underline;
+    }
+
+    .content {
+      background-color: #ffda39;
+      padding: 10px;
+      border-radius: 5px;
     }
 
     /** FORM **/
@@ -127,9 +135,12 @@
 
     button {
       background-color: #ffda39;
-      font-size: large;
-      margin: 10px;
+      font-size: 15px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 10px;
+      border-width: 2px;
+      border-radius: 5px;
+      padding: 5px;
     }
 
     button:hover {
@@ -144,6 +155,8 @@
       font-size: 12px;
       padding: 20px;
       background-color: #ffda39;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
     </style>
     
@@ -154,18 +167,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Svenska Fruktförbundet</title>
+  </head>
+
+  <body>
     <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
       <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
-    </header>
+    </header><br>
     <nav>
-        <a href="vår-organisation.html">Vår organisation</a>
-        <a href="medlemskap.html">Medlemskap</a>
-        <a href="logga-in.html">Logga in</a>
-        <a href="kontakt.html">Kontakta oss</a>
-        <a href="/index.html">Hem ⮌</a>
-      </nav>
-  </head>
-  <body>
+      <a href="vår-organisation.html">Vår organisation</a>
+      <a href="medlemskap.html">Medlemskap</a>
+      <a href="logga-in.html">Logga in</a>
+      <a href="kontakt.html">Kontakta oss</a>
+      <a href="/index.html">Hem ⮌</a>
+    </nav>
     <div id="mainDiv">
       <h2>Medlemskap</h2>
       <p>Ett medlemskap i SFF är så mycket mer än bara ett medlemskap! Läs nedan om de fördelar som väntar dig som ny SFF-medlem, eller skapa ditt konto idag!</p>
@@ -213,7 +227,6 @@
         </form>
       </div>
   </div>
-    <br>
     <footer>Svenska Fruktförbundet © 2025
       <br><br>"Vi älskar frukt- frukt älskar oss"
     </footer>

@@ -4,14 +4,17 @@
    body {
       font-size: 1rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-bottom: 50px;
-      padding: 20px;
+      padding: 10px;
+      background-color:#cca701;
     }
 
     /** HEAD **/
     header {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     background-image:url(https://www.treeplantation.com/images/banana-tree.png);
+     background-image:url(https://img.freepik.com/free-photo/assortment-sweet-juicy-fruits_23-2148144275.jpg);
+     background-size: cover;
+     box-shadow: 3px 3px #70601957;
+     border-radius: 20px;
      height: 250px;
      outline: 2px 2px white;
      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
@@ -39,7 +42,7 @@
 
     #slogan {
       text-align: right;
-      padding: 12px;
+      padding: 22px;
       font-style: italic;
       font-size: 18px;
     }
@@ -50,15 +53,14 @@
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
-      text-align: center;
-      padding: 5px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
     nav a {
       padding: 13px;
     }
 
-    /** LINKS **/
     a {
       color: black;    
       text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
@@ -69,6 +71,12 @@
       text-shadow: none
     }
     
+    /** MAIN **/ 
+    #mainDiv {
+      padding: 20px;
+      background-color: #FFFFFF;
+    }
+
     /** FORM **/
     label {
     padding: 10px;
@@ -80,9 +88,12 @@
 
     button {
       background-color: #ffda39;
-      font-size: large;
-      margin: 10px;
+      font-size: 15px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 10px;
+      border-width: 2px;
+      border-radius: 5px;
+      padding: 5px;
     }
 
     button:hover {
@@ -95,11 +106,10 @@
       text-align: center;
       font-style: italic;
       font-size: 12px;
-      position: fixed;
-      height: 50px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
+      padding: 20px;
+      background-color: #ffda39;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
     </style>
     
@@ -110,67 +120,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Svenska Fruktförbundet</title>
-    
+  </head>
+
+  <body>
     <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
       <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
-    </header>
+    </header><br>
     <nav>
         <a href="/first-website/vår-organisation.html">Vår organisation</a>
         <a href="/first-website/medlemskap.html">Medlemskap</a>
         <a href="/first-website/logga-in.html">Logga in</a>
-        <a href="/first-website/kontakt.html">Kontakt</a>
+        <a href="/first-website/kontakt.html">Kontakta oss</a>
         <a href="/index.html">Hem ⮌</a>
       </nav>
-  </head>
-  <body>
-    <h2>🍌 Fruktkonferens!!! 🍌</h2>
-    <p>Varje år samlar <b>Svenska Fruktsförbundet</b> odlare, forskare och fruktälskare till vår stora konferens - en tradition fylld av kunskap, gemenskap och massor av fruktiga upplevelser. Här får du en chans att nätverka, inspireras och ta del av de senaste rönen inom fruktens värld.</p>
-    <p><b>Anmälan till Svenska Fruktförbundets årliga konferens stänger 9/8/2025</b>. För anmälningar efter sista datum, kontakta <u>seanbanan@sff.se</u>.</p>
-    <p><b>Kostnad</b>: För icke-medlemmar tillkommer en deltagaravgift. Är du medlem i Svenska Fruktförbundet ingår konferensen i ditt medlemskap.</p>
-    <ul>
-      <li><b>Medlemmar</b>: Gratis (ingår i medlemskapet)</li>
-      <li><b>icke-medlemmar</b>:
-    <ul>
-      <li>En dagskonferens brukar ligga på ca <b>300-600 kr</b>.</li>
-      <li>En större konferens med lunch, fika (frukt) och föreläsare kan ligga på <b>800-1500 kr</b>.</li>
-    </ul>
-    </ul>
-    <p>Fyll i din information nedan för att anmäla dig. Fält markerade med * är obligatoriska.</p>
-    <br>
-    <form id="basicForm">
-      <label for="firstName">* Förnamn:</label>
-      <input type="text" id="firstName" name="firstName" required placeholder="Ditt förnamn" oninvalid="this.setCustomValidity('Förnamn är obligatoriskt')" oninput="setCustomValidity('')">
+    <div id="mainDiv">
+      <h2>🍌 Fruktkonferens!!! 🍌</h2>
+      <p>Varje år samlar <b>Svenska Fruktsförbundet</b> odlare, forskare och fruktälskare till vår stora konferens - en tradition fylld av kunskap, gemenskap och massor av fruktiga upplevelser. Här får du en chans att nätverka, inspireras och ta del av de senaste rönen inom fruktens värld.</p>
+      <p><b>Anmälan till Svenska Fruktförbundets årliga konferens stänger 9/8/2025</b>. För anmälningar efter sista datum, kontakta <a href="">seanbanan@sff.se</a>.</p>
+      <p><b>Kostnad</b>: För icke-medlemmar tillkommer en deltagaravgift. Är du medlem i Svenska Fruktförbundet ingår konferensen i ditt medlemskap.</p>
+      <ul>
+        <li><b>Medlemmar</b>: Gratis (ingår i medlemskapet)</li>
+        <li><b>icke-medlemmar</b>:
+      <ul>
+        <li>En dagskonferens brukar ligga på ca <b>300-600 kr</b>.</li>
+        <li>En större konferens med lunch, fika (frukt) och föreläsare kan ligga på <b>800-1500 kr</b>.</li>
+      </ul>
+      </ul>
+      <p>Fyll i din information nedan för att anmäla dig. Fält markerade med * är obligatoriska.</p>
       <br>
-      <label for="surName">* Efternamn:</label>
-      <input type="text" id="surName" name="surName" required placeholder="Ditt efternamn" oninvalid="this.setCustomValidity('Efternamn är obligatoriskt')" oninput="setCustomValidity('')">
-      <br>
-      <label for="email">E-postadress:</label>
-      <input type="text" id="email" name="email" placeholder="Din e-postadress">
-      <br>
-      <label for="age" id="amount">* Ålder:</label>
-      <input type="number" placeholder="Ålder" min="18" max="65" required oninvalid="this.setCustomValidity('Ålder är obligatorisk: välj en ålder mellan 18 och 65')" oninput="setCustomValidity('')">
-      <br>
-      <label for="fruit">* Välj din favoritfrukt:</label>
-      <select id="fruit" fruit="fruit" required oninvalid="this.setCustomValidity('Du MÅSTE välja en favoritfrukt!!!🍌🍌🍌')" oninput="setCustomValidity('')">
-        <option value="" disabled selected>Välj frukt</option>
-        <option value="Äpple">Äpple</option>
-        <option value="Päron">Päron</option>
-        <option value="Apelsin">Apelsin</option>
-        <option value="Banan">Banan</option>
-      </select>
-      <br><br>
-       <label for="allergi">* Matallergi?</label>
-      <select id="allergi" allergi="allergi" required oninvalid="this.setCustomValidity('Du MÅSTE svara!!!')" oninput="setCustomValidity('')">
-        <option value="" disabled selected></option>
-        <option value="Ja">Ja</option>
-        <option value="Nej">Nej</option>
-        <option value="Vet ej">Vet ej</option>
-      </select>
+      <form id="basicForm">
+        <label for="firstName">* Förnamn:</label>
+        <input type="text" id="firstName" name="firstName" required placeholder="Ditt förnamn" oninvalid="this.setCustomValidity('Förnamn är obligatoriskt')" oninput="setCustomValidity('')">
+        <br>
+        <label for="surName">* Efternamn:</label>
+        <input type="text" id="surName" name="surName" required placeholder="Ditt efternamn" oninvalid="this.setCustomValidity('Efternamn är obligatoriskt')" oninput="setCustomValidity('')">
+        <br>
+        <label for="email">E-postadress:</label>
+        <input type="text" id="email" name="email" placeholder="Din e-postadress">
+        <br>
+        <label for="age" id="amount">* Ålder:</label>
+        <input type="number" placeholder="Ålder" min="18" max="65" required oninvalid="this.setCustomValidity('Ålder är obligatorisk: välj en ålder mellan 18 och 65')" oninput="setCustomValidity('')">
+        <br>
+        <label for="fruit">* Välj din favoritfrukt:</label>
+        <select id="fruit" fruit="fruit" required oninvalid="this.setCustomValidity('Du MÅSTE välja en favoritfrukt!!!🍌🍌🍌')" oninput="setCustomValidity('')">
+          <option value="" disabled selected>Välj frukt</option>
+          <option value="Äpple">Äpple</option>
+          <option value="Päron">Päron</option>
+          <option value="Apelsin">Apelsin</option>
+          <option value="Banan">Banan</option>
+        </select>
         <br><br>
-      <button type="submit">Skicka in anmälan</button>
-      <button type="reset">Återställ</button>
-    </form>
-    <br>
+        <label for="allergi">* Matallergi?</label>
+        <select id="allergi" allergi="allergi" required oninvalid="this.setCustomValidity('Du MÅSTE svara!!!')" oninput="setCustomValidity('')">
+          <option value="" disabled selected></option>
+          <option value="Ja">Ja</option>
+          <option value="Nej">Nej</option>
+          <option value="Vet ej">Vet ej</option>
+        </select>
+          <br><br>
+        <button type="submit">Skicka in anmälan</button>
+        <button type="reset">Återställ</button>
+      </form>
+    </div>
     <footer>Svenska Fruktförbundet © 2025
       <br><br>"Vi älskar frukt- frukt älskar oss"
     </footer>
