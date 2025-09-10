@@ -59,6 +59,7 @@
     nav {
       display: flex;
       justify-content: center;
+      text-align: center;
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
@@ -97,6 +98,11 @@
       border-radius: 5px;
       width: 220px;
       height: 360px;
+      box-shadow: 3px 3px #70601957;
+    }
+
+    div.board div:hover {
+           box-shadow: 4px 4px #322b0b57;
     }
 
     #seanBanan {
@@ -112,12 +118,17 @@
     /** FOOTER **/
     footer {
       text-align: center;
-      font-style: italic;
       font-size: 12px;
-      padding: 20px;
+      padding: 10px;
       background-color: #ffda39;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+    }
+
+    footer a {
+      padding: 6px;
+      text-shadow: none;
+      font-size: 10px;
     }
     </style>
     
@@ -131,9 +142,9 @@
   </head>
 
   <body>
-    <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
-      <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
-    </header><br>
+    <a href="/index.html"><header><h1 id="sff">Svenska Fruktförbundet</h1>
+      <p id="slogan">Vi älskar frukt — frukt älskar oss!</p>
+    </header></a><br>
     <nav>
         <a href="vår-organisation.html">Vår organisation</a>
         <a href="medlemskap.html">Medlemskap</a>
@@ -152,22 +163,29 @@
       <li>🍌<b> Påverkan </b>- vi vill att frukt ska ha en självklar plats i vardagen, i samhället och på tallriken.</li>
       </ul>
       <p>Vår styrelse består av en brokig blandning av fruktexperter, odlare och entusaster - alla med samma mål: att få Sverige att smaka lite mer som en fruktbuffé.</p>
-    <h2>Styrelsen</h2>
+    <h2>Vår Styrelse</h2>
     <div class="board">
-      <div><h3><a href="">Sean Banan</a></h3>
+      <a href=""><div><h3>Sean Banan</h3>
         <img src="https://i.scdn.co/image/ab6761610000e5eba7874efb5aa08fc40af59c10" style="height: 250px;" id="seanBanan">
-      <b>Ordförande</b></div>
-      <div><h3><a href="">Anna Book</a></h3>
+      <b>Ordförande</b></div></a>
+      <a href=""><div><h3>Anna Book</h3>
         <img src="https://www.annabenson.se/wp-content/uploads/2014/09/AnnaBook.jpg" style="height: 250px;">
-      <b>Ledarmot</b></div>
-      <div><h3><a href="">Peter Jöback</a></h3>
+      <b>Ledarmot</b></div></a>
+      <a href=""><div><h3>Peter Jöback</h3>
         <img src="https://i.discogs.com/YSw38wiQrdjAdTDNL2CSdV6GIoMdTbMZAFKl4Qw6-cI/rs:fit/g:sm/q:90/h:400/w:313/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM0MzM2/Mi0xNDI5ODY1MzAx/LTYzNjUuanBlZw.jpeg" style="height: 250px;">
-      <b>Ledarmot</b></div>
+      <b>Ledarmot</b></div></a>
       </div>
     </div>
   </body>
 
   <footer><b>Svenska Fruktförbundet © 2025</b>
-    <br>"Vi älskar frukt- frukt älskar oss"</footer>
+    <br><i>"Vi älskar frukt — frukt älskar oss"</i>
+    <br><br>
+    <a href="/first-website/kontakt.html">Kontakt</a>
+    <a href="">Användarvillkor</a>
+    <a href="/first-website/logga-in.html">Mina Sidor</a>
+    <a href="">Jobba hos oss</a>
+    <a href="/first-website/medlemskap.html">Vanliga Frågor</a>
+  </footer>
   
 </html>

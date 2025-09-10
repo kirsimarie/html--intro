@@ -48,6 +48,7 @@
     nav {
       display: flex;
       justify-content: center;
+      text-align: center;
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
@@ -126,7 +127,8 @@
         width: 350px;
         height: 100px;
         margin: 5px;
-    }
+        text-align: left;
+      }
 
     button {
       background-color: #ffffff;
@@ -139,19 +141,24 @@
     }
 
     button:hover {
-      background-color:#c6c6c6;
+      box-shadow: 2px 2px #000000;
       cursor: pointer;
     }
 
     /** FOOTER **/
     footer {
       text-align: center;
-      font-style: italic;
       font-size: 12px;
-      padding: 20px;
+      padding: 10px;
       background-color: #ffda39;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+    }
+
+    footer a {
+      padding: 6px;
+      text-shadow: none;
+      font-size: 10px;
     }
     </style>
     
@@ -165,8 +172,8 @@
   </head>
 
   <body>
-   <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
-      <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
+    <a href="/index.html"><header><h1 id="sff">Svenska Fruktförbundet</h1>
+      <p id="slogan">Vi älskar frukt — frukt älskar oss!</p>
     </header><br>
     <nav>
         <a href="vår-organisation.html">Vår organisation</a>
@@ -214,8 +221,14 @@
           </div>
       </div>
     </div>
-    <footer>Svenska Fruktförbundet © 2025
-      <br><br>"Vi älskar frukt- frukt älskar oss"
-    </footer>
+  <footer><b>Svenska Fruktförbundet © 2025</b>
+    <br><i>"Vi älskar frukt — frukt älskar oss"</i>
+    <br><br>
+    <a href="/first-website/kontakt.html">Kontakt</a>
+    <a href="">Användarvillkor</a>
+    <a href="/first-website/logga-in.html">Mina Sidor</a>
+    <a href="">Jobba hos oss</a>
+    <a href="/first-website/medlemskap.html">Vanliga Frågor</a>
+  </footer>
   </body>
 </html>

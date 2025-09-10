@@ -10,7 +10,7 @@
 
     /** HEAD **/
     header {
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      background-image:url(https://img.freepik.com/free-photo/assortment-sweet-juicy-fruits_23-2148144275.jpg);
      background-size: cover;
      box-shadow: 3px 3px #70601957;
@@ -50,6 +50,7 @@
     nav {
       display: flex;
       justify-content: center;
+      text-align: center;
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
@@ -97,19 +98,24 @@
     }
 
     button:hover {
-      background-color:#d6b830;
+      box-shadow: 2px 2px #000000;
       cursor: pointer;
     }
 
     /** FOOTER **/
     footer {
       text-align: center;
-      font-style: italic;
       font-size: 12px;
-      padding: 20px;
+      padding: 10px;
       background-color: #ffda39;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+    }
+
+    footer a {
+      padding: 6px;
+      text-shadow: none;
+      font-size: 10px;
     }
     </style>
     
@@ -123,8 +129,8 @@
   </head>
 
   <body>
-    <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
-      <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
+    <a href="/index.html"><header><h1 id="sff">Svenska Fruktförbundet</h1>
+      <p id="slogan">Vi älskar frukt — frukt älskar oss!</p>
     </header><br>
     <nav>
         <a href="/first-website/vår-organisation.html">Vår organisation</a>
@@ -140,10 +146,10 @@
       <p><b>Kostnad</b>: För icke-medlemmar tillkommer en deltagaravgift. Är du medlem i Svenska Fruktförbundet ingår konferensen i ditt medlemskap.</p>
       <ul>
         <li><b>Medlemmar</b>: Gratis (ingår i medlemskapet)</li>
-        <li><b>icke-medlemmar</b>:
+        <li><b>Icke-medlemmar</b>:
       <ul>
         <li>En dagskonferens brukar ligga på ca <b>300-600 kr</b>.</li>
-        <li>En större konferens med lunch, fika (frukt) och föreläsare kan ligga på <b>800-1500 kr</b>.</li>
+        <li>En större konferens med lunch, fika (frukt) och föreläsare kan ligga på ca <b>800-1 500 kr</b>.</li>
       </ul>
       </ul>
       <p>Fyll i din information nedan för att anmäla dig. Fält markerade med * är obligatoriska.</p>
@@ -182,8 +188,14 @@
         <button type="reset">Återställ</button>
       </form>
     </div>
-    <footer>Svenska Fruktförbundet © 2025
-      <br><br>"Vi älskar frukt- frukt älskar oss"
+    <footer><b>Svenska Fruktförbundet © 2025</b>
+      <br><i>"Vi älskar frukt — frukt älskar oss"</i>
+      <br><br>
+      <a href="/first-website/kontakt.html">Kontakt</a>
+      <a href="">Användarvillkor</a>
+      <a href="/first-website/logga-in.html">Mina Sidor</a>
+      <a href="">Jobba hos oss</a>
+      <a href="/first-website/medlemskap.html">Vanliga Frågor</a>
     </footer>
   </body>
 </html>

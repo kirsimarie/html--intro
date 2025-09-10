@@ -10,7 +10,7 @@
 
     /** HEADER **/
     header {
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      background-image:url(https://img.freepik.com/free-photo/assortment-sweet-juicy-fruits_23-2148144275.jpg);
      background-size: cover;
      box-shadow: 3px 3px #70601957;
@@ -48,12 +48,14 @@
       text-align: right;
       padding: 22px;
       font-style: italic;
+      text-decoration: none;
       font-size: 18px;
     }
 
     nav {
       display: flex;
       justify-content: center;
+      text-align: center;
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
@@ -97,17 +99,23 @@
       justify-content: center;
       background-color:#ffeda1;
       border-radius: 5px;
+      padding: 5px;
     }
 
     /** FOOTER **/
     footer {
       text-align: center;
-      font-style: italic;
       font-size: 12px;
-      padding: 20px;
+      padding: 10px;
       background-color: #ffda39;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+    }
+
+    footer a {
+      padding: 6px;
+      text-shadow: none;
+      font-size: 10px;
     }
     </style>
     
@@ -120,9 +128,9 @@
     <title>Svenska Fruktförbundet</title>
   </head>
 
-  <body>
-    <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
-      <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
+   <body>
+    <a href="/index.html"><header><h1 id="sff">Svenska Fruktförbundet</h1>
+      <p id="slogan">Vi älskar frukt — frukt älskar oss!</p>
     </header>
      <br>
     <nav>
@@ -145,23 +153,23 @@
         <div id="rightMain">
           <h4><a href="">Fruktsamma Nyheter</a></h4>
           <div>
-            <a href=""><img src="https://www.applesfromny.com/wp-content/uploads/2020/06/SnapdragonNEW.png" alt="Äpple" style="width: 180px;"></a>
-          </div>
-          <div>
-            <a href="" style="font-size: 13px;">Årets äppelskörd är här!</a>
-          </div>
-          <div>
-            <p style="font-size: 9px;">9 Sep, 2025</p>
-          </div>
-          <br>
-          <div>
             <a href="/first-website/fruktkonferens.html"><img src="https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png" alt="Banan" style="width: 180px;"></a>
           </div>
           <div>
             <a href="/first-website/fruktkonferens.html" style="font-size: 13px;">Anmäl dig till Fruktkonferensen 2025!</a>
           </div>
           <div>
-            <p style="font-size: 9px;">6 Sep, 2025</p>
+            <p style="font-size: 9px;">9 Sep, 2025</p>
+          </div>
+          <br>
+          <div>
+            <a href=""><img src="https://www.applesfromny.com/wp-content/uploads/2020/06/SnapdragonNEW.png" alt="Äpple" style="width: 180px;"></a>
+          </div>
+          <div>
+            <a href="" style="font-size: 13px;">Årets äppelskörd är här!</a>
+          </div>
+          <div>
+            <p style="font-size: 9px;">4 Sep, 2025</p>
           </div>
           <a href="" style="font-size: 11px;">Mer...</a>
         </div>
@@ -170,6 +178,13 @@
   </body>
 
   <footer><b>Svenska Fruktförbundet © 2025</b>
-    <br>"Vi älskar frukt- frukt älskar oss"</footer>
+    <br><i>"Vi älskar frukt — frukt älskar oss"</i>
+    <br><br>
+    <a href="/first-website/kontakt.html">Kontakt</a>
+    <a href="">Användarvillkor</a>
+    <a href="/first-website/logga-in.html">Mina Sidor</a>
+    <a href="">Jobba hos oss</a>
+    <a href="/first-website/medlemskap.html">Vanliga Frågor</a>
+</footer>
   
 </html>
