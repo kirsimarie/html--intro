@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <style>
+   body {
+      font-size: 1rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 20px;
+    }
+
+    header {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     background-image:url(https://www.treeplantation.com/images/banana-tree.png);
+     height: 250px;
+     outline: 2px 2px white;
+     text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+    }
+    
+    a {
+      color: black;    
+      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+    }
+
+    a:hover {
+      color: black;
+      text-shadow: none
+    }
+
+     h2 {
+      font-family: Fascinate, system ui;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+
+    #sff {    
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      font-size: 40px;
+      font-family: Fascinate, system-ui;
+    }
+
+    #slogan {
+      text-align: right;
+      padding: 12px;
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffda39;
+      font-family: Fascinate, system-ui;
+      font-size: 20px;
+    }
+
+    nav a {
+      padding: 13px;
+      color: black;    
+      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+    }
+
+    nav a:hover {
+      color: black;
+      text-shadow: none
+    }
+
+    footer {
+      text-align: center;
+      font-style: italic;
+      font-size: 12px;
+    }
+
+    form {
+      padding: 10px;
+    }
+
+    form label {
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    form input {
+      padding: 2px;
+      margin: 5px;
+    }
+
+    button {
+      background-color: #ffda39;
+      font-size: large;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color:#d6b830;
+      cursor: pointer;
+    }
+    </style>
+    
+  <head>
+    <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Svenska Fruktförbundet</title>
+    <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
+      <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
+    </header>
+    <nav>
+        <a href="vår-organisation.html">Vår organisation</a>
+        <a href="medlemskap.html">Medlemskap</a>
+        <a href="logga-in.html">Logga in</a>
+        <a href="kontakt.html">Kontakta oss</a>
+        <a href="/index.html">Hem ⮌</a>
+      </nav>
+  </head>
+  <body>
+    <h2>Logga in</h2>
+    <p>Ange din e-postadress och lösenord för att logga in på ditt konto.</p>
+    <p style="font-size: 15px; font-style: italic;">Problem med att logga in? <a href="kontakt.html">Kontakta oss</a>.</p>
+        <p style="font-size: 12px; color: red;"><b>OBS!</b> Fält markerade med * är obligatoriska.</p>
+    <form id="login">
+      <label for="email">* E-postadress:</label>
+      <input type="text" id="email" name="email" placeholder="Din e-postadress" required oninvalid="this.setCustomValidity('Du måste fylla i en e-postadress.')" oninput="setCustomValidity('')">
+      <br>
+      <label for="password">* Lösenord:</label>
+      <input type="password" id="password" name="password" placeholder="Ditt lösenord" required oninvalid="this.setCustomValidity('Du måste fylla i ett lösenord.')" oninput="setCustomValidity('')">
+      <br>
+      <button type="submit">Logga in</button>
+    </form>
+    <br>
+    <footer>Svenska Fruktförbundet © 2025
+      <br><br>"Vi älskar frukt- frukt älskar oss"
+    </footer>
+  </body>
+</html>
