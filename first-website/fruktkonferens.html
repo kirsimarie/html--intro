@@ -8,22 +8,13 @@
       padding: 20px;
     }
 
+    /** HEAD **/
     header {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      background-image:url(https://www.treeplantation.com/images/banana-tree.png);
      height: 250px;
      outline: 2px 2px white;
      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
-    }
-    
-    a {
-      color: black;    
-      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
-    }
-
-    a:hover {
-      color: black;
-      text-shadow: none
     }
     
     h2 {
@@ -65,43 +56,18 @@
       padding: 13px;
     }
 
-    footer {
-      text-align: center;
-      font-style: italic;
-      font-size: 12px;
-      position: fixed;
-      height: 50px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
+    /** LINKS **/
+    a {
+      color: black;    
+      text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
     }
 
-    div.mainPage {
-      display: inline-block;
-      width: 100%;
-        }
-
-    #leftMain {
-      width: 70%;
-      float: left;
-      padding: 1px;
+    a:hover {
+      color: black;
+      text-shadow: none
     }
-
-    #rightMain {
-      float: right;
-      justify-content: center;
-      background-color: rgba(255, 255, 0, 0.396);
-      padding: 16px;
-      width: 20%;
-      text-align: center;
-    }
-
-    #rightMain div {
-      display: flex;
-      justify-content: center;
-      background-color: rgb(207, 252, 139);
-    }
-
+    
+    /** FORM **/
     label {
     padding: 10px;
     }
@@ -110,7 +76,7 @@
       margin: 5px;
     }
 
-       button {
+    button {
       background-color: #ffda39;
       font-size: large;
       margin: 10px;
@@ -122,6 +88,17 @@
       cursor: pointer;
     }
 
+    /** FOOTER **/
+    footer {
+      text-align: center;
+      font-style: italic;
+      font-size: 12px;
+      position: fixed;
+      height: 50px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+    }
     </style>
     
   <head>
@@ -131,6 +108,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Svenska Fruktförbundet</title>
+    
     <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
       <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
     </header>
@@ -144,7 +122,7 @@
   </head>
   <body>
     <h2>🍌 Fruktkonferens!!! 🍌</h2>
-    <p>Varje år samlar <b>Svenska Fruktsförbundet odlare</b>, forskare och fruktälskare till vår stora konferens - en tradition fylld av kunskap, gemenskap och massor av fruktiga upplevelser. Här får du en chans att nätverka, inspireras och ta del av de senaste rönen inom fruktens värld.</p>
+    <p>Varje år samlar <b>Svenska Fruktsförbundet</b> odlare, forskare och fruktälskare till vår stora konferens - en tradition fylld av kunskap, gemenskap och massor av fruktiga upplevelser. Här får du en chans att nätverka, inspireras och ta del av de senaste rönen inom fruktens värld.</p>
     <p><b>Anmälan till Svenska Fruktförbundets årliga konferens stänger 9/8/2025</b>. För anmälningar efter sista datum, kontakta <u>seanbanan@sff.se</u>.</p>
     <p><b>Kostnad</b>: För icke-medlemmar tillkommer en deltagaravgift. Är du medlem i Svenska Fruktförbundet ingår konferensen i ditt medlemskap.</p>
     <ul>
@@ -152,9 +130,10 @@
       <li><b>icke-medlemmar</b>:
     <ul>
       <li>En dagskonferens brukar ligga på ca <b>300-600 kr</b>.</li>
-      <li>En större konferens med lunch, fika och föreläsare kan ligga på <b>800-1500</b></li>
+      <li>En större konferens med lunch, fika (frukt) och föreläsare kan ligga på <b>800-1500 kr</b>.</li>
     </ul>
-    <p>Fyll i din information för att slutföra ansökningen. Fält markerade med * är obligatoriska.</p>
+    </ul>
+    <p>Fyll i din information nedan för att anmäla dig. Fält markerade med * är obligatoriska.</p>
     <br>
     <form id="basicForm">
       <label for="firstName">* Förnamn:</label>
