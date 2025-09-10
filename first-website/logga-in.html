@@ -4,10 +4,11 @@
    body {
       font-size: 1rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      padding: 20px;
+      padding: 10px;
+      background-color:#cca701;
     }
 
-    /** HEAD **/
+    /** HEADER **/
     header {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      background-image:url(https://www.treeplantation.com/images/banana-tree.png);
@@ -53,6 +54,8 @@
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
+      text-align: center;
+      padding: 5px;
     }
 
     nav a {
@@ -93,12 +96,19 @@
       cursor: pointer;
     }
 
+    /** MAIN **/
+    #mainDiv {
+      padding: 20px;
+      background-color: #FFFFFF;
+    }
+
     /** FOOTER **/
     footer {
       text-align: center;
       font-style: italic;
       font-size: 12px;
       padding: 20px;
+      background-color: #ffda39;
     }
     </style>
     
@@ -109,6 +119,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Svenska Fruktförbundet</title>
+  </head>
+  
+  <body>
     <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
       <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
     </header>
@@ -118,23 +131,22 @@
         <a href="logga-in.html">Logga in</a>
         <a href="kontakt.html">Kontakta oss</a>
         <a href="/index.html">Hem ⮌</a>
-      </nav>
-  </head>
-  <body>
-    <h2>Logga in</h2>
-    <p>Ange din e-postadress och lösenord för att logga in på ditt konto.</p>
-    <p style="font-size: 15px; font-style: italic;">Problem med att logga in? <a href="kontakt.html">Kontakta oss</a>.</p>
-        <p style="font-size: 12px; color: red;"><b>OBS!</b> Fält markerade med * är obligatoriska.</p>
-    <form id="login">
-      <label for="email">* E-postadress:</label>
-      <input type="text" id="email" name="email" placeholder="Din e-postadress" required oninvalid="this.setCustomValidity('Du måste fylla i en e-postadress.')" oninput="setCustomValidity('')">
-      <br>
-      <label for="password">* Lösenord:</label>
-      <input type="password" id="password" name="password" placeholder="Ditt lösenord" required oninvalid="this.setCustomValidity('Du måste fylla i ett lösenord.')" oninput="setCustomValidity('')">
-      <br>
-      <button type="submit">Logga in</button>
-    </form>
-    <br>
+    </nav>
+    <div id="mainDiv">
+      <h2>Logga in</h2>
+      <p>Ange din e-postadress och lösenord för att logga in på ditt konto.</p>
+      <p style="font-size: 15px; font-style: italic;">Problem med att logga in? <a href="kontakt.html">Kontakta oss</a>.</p>
+          <p style="font-size: 12px; color: red;"><b>OBS!</b> Fält markerade med * är obligatoriska.</p>
+      <form id="login">
+        <label for="email">* E-postadress:</label>
+        <input type="text" id="email" name="email" placeholder="Din e-postadress" required oninvalid="this.setCustomValidity('Du måste fylla i en e-postadress.')" oninput="setCustomValidity('')">
+        <br>
+        <label for="password">* Lösenord:</label>
+        <input type="password" id="password" name="password" placeholder="Ditt lösenord" required oninvalid="this.setCustomValidity('Du måste fylla i ett lösenord.')" oninput="setCustomValidity('')">
+        <br>
+        <button type="submit">Logga in</button>
+      </form>
+    </div>
     <footer>Svenska Fruktförbundet © 2025
       <br><br>"Vi älskar frukt- frukt älskar oss"
     </footer>

@@ -4,11 +4,11 @@
    body {
       font-size: 1rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-bottom: 50px;
-      padding: 20px;
+      padding: 10px;
+      background-color:#cca701;
     }
 
-    /** HEAD **/
+    /** HEADER **/
     header {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      background-image:url(https://www.treeplantation.com/images/banana-tree.png);
@@ -61,7 +61,12 @@
     }
 
     /** MAIN **/
-    div.mainPage {
+    #mainDiv {
+      padding: 20px;
+      background-color: #FFFFFF;
+    }
+
+    div.framsida {
       display: inline-block;
       width: 100%;
         }
@@ -93,6 +98,7 @@
       font-style: italic;
       font-size: 12px;
       padding: 20px;
+      background-color: #ffda39;
     }
     </style>
     
@@ -104,55 +110,55 @@
     <meta charset="UTF-8">
     <title>Svenska Fruktförbundet</title>
   </head>
-          <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
-      
+
+
+  <body>
+    <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
       <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
     </header>
     <nav>
-        <a href="/first-website/vår-organisation.html">Vår organisation</a>
-        <a href="/first-website/medlemskap.html">Medlemskap</a>
-        <a href="/first-website/logga-in.html">Logga in</a>
-        <a href="/first-website/kontakt.html">Kontakt</a>
-      </nav>
-
-  <body>
-    <div class="mainPage">
-      <div id="leftMain">
-        <h3>Välkommen till SFF:s hemsida!</h3>
-        <p style="font-size:15px;"><b>Svenska Fruktförbundet</b> är en ideell organisation som odlare, forskare, företag och fruktenusiaster från hela landet. Vi arbetar för främja kunskap, odling och intresset för frukt i Sverige - från äpple och päron till bär och mer exotiska sorter. Genom våra evenemang, konferenser och nätverk skapar vi mötesplatser där erfarenheter delas och nya idéer växer fram. Läs mer om oss och vår organisation <a href="/first-website/vår-organisation.html">här</a>.</p>
-        <p style="font-size:15px;"><b>Vi på Svenska Fruktförbundet arbetar också aktivt med frågor kring matallergier.</b> Vårt mål är att alla - oavsett förutsättningar - ska kunna njuta av frukt på ett tryggt och säkert sätt. Genom att sprida kunskap, främja forskning och skapa dialog med odlare, konsumenter och experter vill vi bidra till en fruktgemenskap där ingen behöver känna sig utanför.</p>
-        <h3>Frukt och Hälsa</h3>
-      <p style="font-size:15px;"><b>Frukta icke!</b> Vi kommer inte hävda att frukt inte är "bra" för hälsan, men har du inte undrat varför frukt, trots att den är "lika bra" som grönsaker, smakar så mycket bättre? Du kanske inte medvetet har tänkt det, men du <i>vet</i> att det är så.
-      <br>
-      Frukt är hälsosamt, visst, men det är också en sockerpackad smäll för dig som vanligtvis gillar att knapra på en morot.</p>
-      </div>
-      <div id="rightMain">
-        <h4><a href=""><center>Fruktsamma Nyheter</center></a></h4>
-        <div>
-          <img src="https://www.applesfromny.com/wp-content/uploads/2020/06/SnapdragonNEW.png" alt="Äpple" style="width: 180px;">
-        </div>
-        <div>
-          <a href="" style="font-size: 13px;">Årets äppelskörd är här!</a>
-        </div>
-        <div>
-          <p style="font-size: 9px;">9 Sep, 2025</p>
-        </div>
+      <a href="/first-website/vår-organisation.html">Vår organisation</a>
+      <a href="/first-website/medlemskap.html">Medlemskap</a>
+      <a href="/first-website/logga-in.html">Logga in</a>
+      <a href="/first-website/kontakt.html">Kontakt</a>
+    </nav>
+    <div id="mainDiv">
+      <div class="framsida">
+        <div id="leftMain">
+          <h3>Välkommen till SFF:s hemsida!</h3>
+          <p style="font-size:15px;"><b>Svenska Fruktförbundet</b> är en ideell organisation som odlare, forskare, företag och fruktenusiaster från hela landet. Vi arbetar för främja kunskap, odling och intresset för frukt i Sverige - från äpple och päron till bär och mer exotiska sorter. Genom våra evenemang, konferenser och nätverk skapar vi mötesplatser där erfarenheter delas och nya idéer växer fram. Läs mer om oss och vår organisation <a href="/first-website/vår-organisation.html">här</a>.</p>
+          <p style="font-size:15px;"><b>Vi på Svenska Fruktförbundet arbetar också aktivt med frågor kring matallergier.</b> Vårt mål är att alla - oavsett förutsättningar - ska kunna njuta av frukt på ett tryggt och säkert sätt. Genom att sprida kunskap, främja forskning och skapa dialog med odlare, konsumenter och experter vill vi bidra till en fruktgemenskap där ingen behöver känna sig utanför.</p>
+          <h3>Frukt och Hälsa</h3>
+        <p style="font-size:15px;"><b>Frukta icke!</b> Vi kommer inte hävda att frukt inte är "bra" för hälsan, men har du inte undrat varför frukt, trots att den är "lika bra" som grönsaker, smakar så mycket bättre? Du kanske inte medvetet har tänkt det, men du <i>vet</i> att det är så.
         <br>
-        <div>
-          <img src="https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png" alt="Banan" style="width: 180px;">
+        Frukt är hälsosamt, visst, men det är också en sockerpackad smäll för dig som vanligtvis gillar att knapra på en morot.</p>
         </div>
-        <div>
-          <a href="/first-website/fruktkonferens.html" style="font-size: 13px;">Anmäl dig till Fruktkonferensen 2025!</a>
+        <div id="rightMain">
+          <h4><a href=""><center>Fruktsamma Nyheter</center></a></h4>
+          <div>
+            <img src="https://www.applesfromny.com/wp-content/uploads/2020/06/SnapdragonNEW.png" alt="Äpple" style="width: 180px;">
+          </div>
+          <div>
+            <a href="" style="font-size: 13px;">Årets äppelskörd är här!</a>
+          </div>
+          <div>
+            <p style="font-size: 9px;">9 Sep, 2025</p>
+          </div>
+          <br>
+          <div>
+            <img src="https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png" alt="Banan" style="width: 180px;">
+          </div>
+          <div>
+            <a href="/first-website/fruktkonferens.html" style="font-size: 13px;">Anmäl dig till Fruktkonferensen 2025!</a>
+          </div>
+          <div>
+            <p style="font-size: 9px;">6 Sep, 2025</p>
+          </div>
+          <a href="" style="font-size: 11px;">Mer...</a>
         </div>
-        <div>
-          <p style="font-size: 9px;">6 Sep, 2025</p>
-        </div>
-        <a href="" style="font-size: 11px;">Mer...</a>
       </div>
     </div>
-
-    <div>
-        </body>
+  </body>
 
   <footer><b>Svenska Fruktförbundet © 2025</b>
     <br>"Vi älskar frukt- frukt älskar oss"</footer>

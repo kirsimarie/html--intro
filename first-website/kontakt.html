@@ -4,10 +4,11 @@
    body {
       font-size: 1rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      padding: 20px;
+      padding: 10px;
+      background-color:#cca701;
     }
 
-    /** HEAD **/
+    /** HEADER **/
     header {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      background-image:url(https://www.treeplantation.com/images/banana-tree.png);
@@ -47,6 +48,8 @@
       background-color: #ffda39;
       font-family: Fascinate, system-ui;
       font-size: 20px;
+      text-align: center;
+      padding: 5px;
     }
 
     nav a {
@@ -103,6 +106,11 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
+    #mainDiv {
+      padding: 20px;
+      background-color: #FFFFFF;
+    }
+
     /** FORM **/
     #message {
         width: 350px;
@@ -128,6 +136,7 @@
       font-style: italic;
       font-size: 12px;
       padding: 20px;
+      background-color: #ffda39;
     }
     </style>
     
@@ -138,7 +147,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Svenska Fruktförbundet</title>
-    <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
+  </head>
+
+  <body>
+   <header><h1 id="sff"><a href="/index.html">Svenska Fruktförbundet</a></h1>
       <p id="slogan">Vi älskar frukt- frukt älskar oss!</p>
     </header>
     <nav>
@@ -148,44 +160,44 @@
         <a href="kontakt.html">Kontakta oss</a>
         <a href="/index.html">Hem ⮌</a>
       </nav>
-  </head>
-  <body>
-    <div class="contact"><h2>Kontakta oss</h2>
-    <div id="leftContact"><p><img src="https://www.freeiconspng.com/uploads/fax-icon-png-11.png" style="width: 25px;"> <b>Fax:</b> 08-123 456 78</p>
-    <p><img src="https://icons.veryicon.com/png/o/miscellaneous/ios-apple-icon/ios-mail-7.png" style="width: 25px;"> <b>E-post:</b> information@SFF.se</p>
-    </div>
-    <div id="rightContact">
-        <p><b>Skriv ett meddelande till oss:</b><br>Vi återkommer oftast inom 1-3 dagar.</p>
-    <form id="login">
-      <input id="message" type="text" required placeholder="Skriv ditt meddelande här..." oninvalid="this.setCustomValidity('Du måste skriva något i meddelandet.')" oninput="setCustomValidity('')">
-      <br>
-      <label for="email">Din e-postadress:</label>
-      <input type="text" id="email" name="email" required placeholder="exempel@exempel.se" oninvalid="this.setCustomValidity('E-postadress är obligatoriskt')" oninput="setCustomValidity('')">
-      <br>
+    <div id="mainDiv">
+      <div class="contact"><h2>Kontakta oss</h2>
+      <div id="leftContact"><p><img src="https://www.freeiconspng.com/uploads/fax-icon-png-11.png" style="width: 25px;"> <b>Fax:</b> 08-123 456 78</p>
+      <p><img src="https://icons.veryicon.com/png/o/miscellaneous/ios-apple-icon/ios-mail-7.png" style="width: 25px;"> <b>E-post:</b> information@SFF.se</p>
+      </div>
+      <div id="rightContact">
+          <p><b>Skriv ett meddelande till oss:</b><br>Vi återkommer oftast inom 1-3 dagar.</p>
+      <form id="login">
+        <input id="message" type="text" required placeholder="Skriv ditt meddelande här..." oninvalid="this.setCustomValidity('Du måste skriva något i meddelandet.')" oninput="setCustomValidity('')">
+        <br>
+        <label for="email">Din e-postadress:</label>
+        <input type="text" id="email" name="email" required placeholder="exempel@exempel.se" oninvalid="this.setCustomValidity('E-postadress är obligatoriskt')" oninput="setCustomValidity('')">
+        <br>
 
-      <p>Skicka en kopia av detta meddelande till min e-post</a>
-      <input type="checkbox">
-      <br>
-      <button type="submit">Skicka</button>
-    </form>
+        <p>Skicka en kopia av detta meddelande till min e-post</a>
+        <input type="checkbox">
+        <br>
+        <button type="submit">Skicka</button>
+      </form>
 
-    </div>
-</div>
-    <div class="map"><h2>Huvudkontor Globen</h2>
-        <div id="left">
-            <p> Arenavägen 61, 121 77 Johanneshov</p>
-            <p><b>Ta dig till oss via kollektivtrafiken:</p></b>
-            <ul>
-                <li>Från Stockholm City, ta tunnelbanans gröna linje mot Hagsätra, Farsta strand eller Skarpnäck.</li>
-                <li>Gå av vid <b>Globen</b>.</li>
-                <li>Från stationen är det bara ett bananskals promenad SFF.</li>
-            </ul>
-            <p><b>Ta dig till oss med bil:</b></p>
-            <ul><li>Det är olagligt att åka bil till SFF.</li></ul>
-        </div>
-        <div id="right"><br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4074.7794273734953!2d18.081398!3d59.29304830000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f7826969023e7%3A0x22d131e0b57263d3!2sArenav%C3%A4gen%2061%2C%20121%2028%20Johanneshov!5e0!3m2!1sen!2sse!4v1757420422827!5m2!1sen!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      </div>
+  </div>
+      <div class="map"><h2>Huvudkontor Globen</h2>
+          <div id="left">
+              <p> Arenavägen 61, 121 77 Johanneshov</p>
+              <p><b>Ta dig till oss via kollektivtrafiken:</p></b>
+              <ul>
+                  <li>Från Stockholm City, ta tunnelbanans gröna linje mot Hagsätra, Farsta strand eller Skarpnäck.</li>
+                  <li>Gå av vid <b>Globen</b>.</li>
+                  <li>Från stationen är det bara ett bananskals promenad SFF.</li>
+              </ul>
+              <p><b>Ta dig till oss med bil:</b></p>
+              <ul><li>Det är olagligt att åka bil till SFF.</li></ul>
+          </div>
+          <div id="right"><br>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4074.7794273734953!2d18.081398!3d59.29304830000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f7826969023e7%3A0x22d131e0b57263d3!2sArenav%C3%A4gen%2061%2C%20121%2028%20Johanneshov!5e0!3m2!1sen!2sse!4v1757420422827!5m2!1sen!2sse" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
     </div>
     <footer>Svenska Fruktförbundet © 2025
       <br><br>"Vi älskar frukt- frukt älskar oss"
